@@ -1,17 +1,16 @@
 #!/bin/ruby
 
-usernames=['jdoe','peter','mary','bob']
+#usernames=['jdoe','peter','mary','bob']
 
-for u in usernames
-	puts u
-end
+#Hash
+usernames = [
+	{:name => "jdoe",:age => 31,:job => "DevOps Engineer"},
+	{:name => "linda",:age => 25,:job => "SysAdmin"},
+	{:name => "bob",:age => 29,:job => "Developer"},
+	{:name => "mark",:age => 35,:job => "Tester"},
+]
 
 usernames.each do |u|
-	puts u
+	puts "#{u[:name]} : #{u[:age]}"
 end
 
-usernames.each {|u| puts u}
-
-for i in usernames 
-	puts "Hello #{i}"
-end
