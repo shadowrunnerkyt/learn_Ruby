@@ -1,16 +1,17 @@
 #!/bin/ruby
 
-puts "Hello World!"
-print "With print, no paren\n"
-print("Print with paren\n")
+usernames=['jdoe','peter','mary','bob']
 
-myname="Chris"
-#print "My name is #{myname}\n"
-printf "My name is %s\n", myname
+for u in usernames
+	puts u
+end
 
-# Python quotes
-# print("Her pet's name is Kenzy")
+usernames.each do |u|
+	puts u
+end
 
-puts 'Her pet\'s name is Kenzy'
-puts %q{Her pet's name is Kenzy and she loves "Drawing"}
+usernames.each {|u| puts u}
 
+for i in usernames 
+	puts "Hello #{i}"
+end
